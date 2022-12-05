@@ -3,12 +3,13 @@ using UnityEngine;
 
 namespace DraconianMarshmallows.Core
 {
+  [DefaultExecutionOrder(-404)]
   public class BaseMainController : MonoBehaviorPlus
   {
     public static BaseMainController Instance { get; private set; }
 
     private Action onUpdate;
-    private BaseLevelController currentLevelController;
+    private BaseLevelManager currentLevelManager;
 
     // TODO:: Can we make sure this runs before anything in the level in the editor ???
     protected override void Start()
@@ -17,10 +18,10 @@ namespace DraconianMarshmallows.Core
       Instance = this;
     }
 
-    public void RegisterLevelController(BaseLevelController controller)
+    public void RegisterLevelController(BaseLevelManager manager)
     {
-      currentLevelController = controller;
-      onUpdate += controller.OnUpdate;
+      currentLevelManager = manager;
+      onUpdate += manager.OnUpdate;
     }
 
     protected override void Update()
@@ -29,6 +30,6 @@ namespace DraconianMarshmallows.Core
       onUpdate();
     }
 
-// TODO:: Can we reference the BaseMainController.Instance to run all updates. 
+// TODO:: Can we reference the BaseMainController.Instance to run all updates ?
   }
 }
