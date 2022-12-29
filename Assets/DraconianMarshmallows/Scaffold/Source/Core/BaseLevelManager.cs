@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DraconianMarshmallows.Core
 {
-  [DefaultExecutionOrder(-300)]
+//  [DefaultExecutionOrder(404)]
   public class BaseLevelManager : MonoBehaviorPlus
   {
     protected override void Start()

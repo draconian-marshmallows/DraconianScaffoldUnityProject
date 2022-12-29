@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DraconianMarshmallows.Core
 {
-  [DefaultExecutionOrder(-404)]
+//  [DefaultExecutionOrder(250)]
   public class BaseMainController : MonoBehaviorPlus
   {
     public static BaseMainController Instance { get; private set; }
@@ -12,6 +12,7 @@ namespace DraconianMarshmallows.Core
     private BaseLevelManager currentLevelManager;
 
     // TODO:: Can we make sure this runs before anything in the level in the editor ???
+    
     protected override void Start()
     {
       Debug.Log("MAIN controller started...");
