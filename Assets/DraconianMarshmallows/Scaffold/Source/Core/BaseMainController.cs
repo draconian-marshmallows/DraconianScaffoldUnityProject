@@ -14,6 +14,11 @@ namespace DraconianMarshmallows.Core
     private Action onUpdate;
     private BaseLevelManager currentLevelManager;
     
+    private static readonly SceneLoader sceneLoader = new SceneLoader();
+
+    // TODO:: Figure out how to expose this - this is just a POC for delegation of composed implementations. 
+    private readonly Action<int> loadLevel = sceneLoader.Load;
+    
     protected override void Start()
     {
       Debug.Log("MAIN controller started...");
@@ -36,7 +41,10 @@ namespace DraconianMarshmallows.Core
 
     private void loadInitialLevelScene()
     {
-      StartCoroutine(loadSceneAsynchronously(levelData.initialLevelSceneIndex));
+      var initialLevelSceneIndex = levelData.initialLevelSceneIndex;
+      loadLevel(initialLevelSceneIndex);
+      
+      StartCoroutine(loadSceneAsynchronously(initialLevelSceneIndex));
     }
 
     private IEnumerator loadSceneAsynchronously(int buildIndex)
