@@ -21,7 +21,7 @@ namespace DraconianMarshmallows.Core
       requester.StartCoroutine(loadSceneAsynchronously(sceneBuildIndex));
     }
     
-    private IEnumerator loadSceneAsynchronously(int buildIndex)
+    private static IEnumerator loadSceneAsynchronously(int buildIndex)
     {
       var operation = SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Additive);
       while ( ! operation.isDone)
