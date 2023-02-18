@@ -122,7 +122,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
-  text: {fileID: 0}
   label: {fileID: 3716440906551278579}
 --- !u!1001 &6423203823793286379
 PrefabInstance:
@@ -131,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3716440906520168837}
     m_Modifications:
+    - target: {fileID: 7687854058511079192, guid: abafb4e25de320240a7db9c9f875e59a, type: 3}
+      propertyPath: m_text
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 7687854058511079193, guid: abafb4e25de320240a7db9c9f875e59a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

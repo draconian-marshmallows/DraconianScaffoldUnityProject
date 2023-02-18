@@ -12,12 +12,14 @@ This is a project designed to be a structure that can be imported for handling c
 
 ## TODO
 - [ ] Add all standard uGUI prefabs. 
-    - [?] Text
+    - [x] Text
     - [x] Button
-    - [ ] Panel
-    - [ ] Toggle
-    - [ ] Slider
-    - [ ] Scroll Bar
-    - [ ] Scroll View
+    - [x] Panel
+    - [x] Toggle
+    - [x] Slider
+    - [x] Scroll Bar
+    - [x] Scroll View
+        - [ ] Fix behavior. 
+    - [x] Input Field
+        - [ ] Fix behavior. 
     - [ ] Drop Down
-    - [ ] Input Field
