@@ -20,6 +20,6 @@ This is a project designed to be a structure that can be imported for handling c
     - [x] Scroll View
         - [x] Fix behavior. 
     - [x] Input Field
-        - [ ] Fix behavior. 
+        - [x] Fix behavior. 
     - [ ] Panel
     - [ ] Drop Down

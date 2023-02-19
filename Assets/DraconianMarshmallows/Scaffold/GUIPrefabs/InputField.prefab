@@ -174,7 +174,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5877558816666941582}
   m_TextViewport: {fileID: 5877558815730937849}
   m_TextComponent: {fileID: 4260957283048679648}
-  m_Placeholder: {fileID: 0}
+  m_Placeholder: {fileID: 4260957283858580197}
   m_VerticalScrollbar: {fileID: 0}
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
@@ -360,3 +360,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7687854058511079193, guid: abafb4e25de320240a7db9c9f875e59a, type: 3}
   m_PrefabInstance: {fileID: 5877558815915251197}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4260957283858580197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7687854058511079192, guid: abafb4e25de320240a7db9c9f875e59a, type: 3}
+  m_PrefabInstance: {fileID: 5877558815915251197}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
