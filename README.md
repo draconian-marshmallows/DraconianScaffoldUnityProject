@@ -21,5 +21,5 @@ This is a project designed to be a structure that can be imported for handling c
         - [x] Fix behavior. 
     - [x] Input Field
         - [x] Fix behavior. 
-    - [ ] Panel
+    - [x] Panel
     - [ ] Drop Down
