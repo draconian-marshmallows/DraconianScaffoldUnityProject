@@ -11,7 +11,7 @@ This is a project designed to be a structure that can be imported for handling c
 - A skinnable GUI with it's own main-manager. In Scaffold we will include prefabs for the standard Unity-GUI(uGUI) views & widgets. These will be structured as nested prefabs & prefab variants, allowing changes to styles/skins to be made in a single prefab while manifesting across the game's GUIs. 
 
 ## TODO
-- [ ] Add all standard uGUI prefabs. 
+- [x] Add all standard uGUI prefabs. 
     - [x] Text
     - [x] Button
     - [x] Toggle
