@@ -31,6 +31,9 @@ namespace DraconianMarshmallows.Core
       onUpdate += manager.OnUpdate;
     }
 
+    public void LoadLevel(int buildIndex) => 
+      sceneLoader.Load(buildIndex);
+
     // TODO:: Can we reference the BaseMainController.Instance to run all updates ?
     protected override void Update()
     {
