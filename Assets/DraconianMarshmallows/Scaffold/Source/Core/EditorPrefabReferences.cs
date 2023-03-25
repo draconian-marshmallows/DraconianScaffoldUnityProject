@@ -9,6 +9,13 @@ namespace DraconianMarshmallows.Core
     
     public GameObject TextPrefab;
     public GameObject ButtonPrefab;
+    public GameObject TogglePrefab;
+    public GameObject SliderPrefab;
+    public GameObject ScrollBarPrefab;
+    public GameObject ScrollViewPrefab;
+    public GameObject InputFieldPrefab;
+    public GameObject PanelPrefab;
+    public GameObject DropDownPrefab;
 
     public static void Initialize(Object instance)
     {

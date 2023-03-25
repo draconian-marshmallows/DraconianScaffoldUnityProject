@@ -8,6 +8,7 @@ namespace DraconianMarshmallows.Scaffold.Editor
 {
   public static class ScaffoldMenu
   {
+    private const string GUI_CREATE_MENU_PATH = "GameObject/UI/";
     private const string PREFAB_REFERENCE_PATH = "Assets/DraconianMarshmallows/DataAssets/EditorPrefabReferences.asset";
     
 //    [MenuItem("Assets/Create/DMG/My Stuff")]
@@ -16,7 +17,7 @@ namespace DraconianMarshmallows.Scaffold.Editor
 //      Debug.Log("Thing created... ");
 //    }
     
-    [MenuItem("GameObject/UI/DGUI Text")][UsedImplicitly]
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Text")][UsedImplicitly]
     public static void AddText()
     {
       initializePrefabReferences();
@@ -24,12 +25,61 @@ namespace DraconianMarshmallows.Scaffold.Editor
       instantiatePrefab(EditorPrefabReferences.Instance.TextPrefab);
     }
     
-    [MenuItem("GameObject/UI/DGUI Button")][UsedImplicitly]
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Button")][UsedImplicitly]
     public static void AddButton()
     {
       initializePrefabReferences();
       Debug.Log("instantiatePrefab(EditorPrefabReferences.Instance.ButtonPrefab)");
       instantiatePrefab(EditorPrefabReferences.Instance.ButtonPrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Toggle")][UsedImplicitly]
+    public static void AddToggle()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.TogglePrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Slider")][UsedImplicitly]
+    public static void AddSlider()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.SliderPrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Scroll Bar")][UsedImplicitly]
+    public static void AddScrollBar()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.ScrollBarPrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Scroll View")][UsedImplicitly]
+    public static void AddScrollView()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.ScrollViewPrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Input Field")][UsedImplicitly]
+    public static void AddInputField()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.InputFieldPrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Panel")][UsedImplicitly]
+    public static void AddPanel()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.PanelPrefab);
+    }
+    
+    [MenuItem(GUI_CREATE_MENU_PATH + "DGUI Drop Down")][UsedImplicitly]
+    public static void AddDropDown()
+    {
+      initializePrefabReferences();
+      instantiatePrefab(EditorPrefabReferences.Instance.DropDownPrefab);
     }
 
 //    [MenuItem("Draconian Marshmallows/Test 1")]

@@ -11,16 +11,16 @@ This is a project designed to be a structure that can be imported for handling c
 - A skinnable GUI with it's own main-manager. In Scaffold we will include prefabs for the standard Unity-GUI(uGUI) views & widgets. These will be structured as nested prefabs & prefab variants, allowing changes to styles/skins to be made in a single prefab while manifesting across the game's GUIs. 
 
 ## TO DOs ##
-- [ ] Add create-menu items for spawning DGUI prefabs. 
+- [x] Add create-menu items for spawning DGUI prefabs. 
     - [x] Text
     - [x] Button
-    - [ ] Toggle
-    - [ ] Slider
-    - [ ] Scroll Bar
-    - [ ] Scroll View 
-    - [ ] Input Field
-    - [ ] Panel
-    - [ ] Drop Down
+    - [x] Toggle
+    - [x] Slider
+    - [x] Scroll Bar
+    - [x] Scroll View
+    - [x] Input Field
+    - [x] Panel
+    - [x] Drop Down
 
 - [ ] See if there's a way to add scenes to the build configuration programatically. 
 
