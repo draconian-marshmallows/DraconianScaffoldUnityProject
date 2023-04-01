@@ -1,3 +1,4 @@
+using CatFooding;
 using DraconianMarshmallows.Core;
 using DraconianMarshmallows.GUI;
 using UnityEngine;
@@ -16,8 +17,7 @@ namespace Source
 
     private static void onClickStart()
     {
-      // TODO:: Add place for level build indices. 
-      MainController.Instance.LoadLevel(2);
+      BaseMainController.Instance.LoadLevel(LevelIndices.LEVEL1);
     }
   }
 }
