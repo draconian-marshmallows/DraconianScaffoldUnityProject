@@ -6,6 +6,7 @@ namespace DraconianMarshmallows.Scaffold.Core
   
   public class LevelData : ScriptableObject
   {
+    // TODO:: Rename to initialLevelSceneBuildIndex ?
     public int initialLevelSceneIndex;
   }
 }

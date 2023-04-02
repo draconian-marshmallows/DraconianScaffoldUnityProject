@@ -22,6 +22,8 @@ This is a project designed to be a structure that can be imported for handling c
     - [x] Panel
     - [x] Drop Down
 
+- [ ] See if there's a way to figure out if the editor initial-load scene's set & add warning. 
+- [ ] See if there's a way to auto run the script to set the initial editor scene load on startup. 
 - [ ] See if there's a way to add scenes to the build configuration programatically. 
 
 - [x] Add all standard uGUI prefabs. 

@@ -6,6 +6,7 @@ namespace DraconianMarshmallows.Scaffold.Core
   {
     protected virtual void Start() { }
 
+    // TODO:: This should be removed if we rig-up OnUpdate to be called. 
     protected virtual void Update() { }
     
     /// <summary>

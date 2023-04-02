@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Threading;
 using DraconianMarshmallows.Scaffold.Core;
 using JetBrains.Annotations;
 using UnityEditor;
@@ -6,10 +8,35 @@ using UnityEngine;
 
 namespace DraconianMarshmallows.Scaffold.Editor
 {
+  [InitializeOnLoad]
   public static class ScaffoldMenu
   {
     private const string GUI_CREATE_MENU_PATH = "GameObject/UI/";
     private const string PREFAB_REFERENCE_PATH = "Assets/DraconianMarshmallows/DataAssets/EditorPrefabReferences.asset";
+
+    static ScaffoldMenu()
+    {
+      Debug.Log($"ScaffoldMenu started :: {EditorSceneManager.playModeStartScene == null}");
+
+      if (EditorSceneManager.playModeStartScene != null) 
+        return;
+      
+      Debug.Log("Sleeping...");
+      Thread.Sleep(500);
+      Debug.Log("AWAKED !!!");
+
+      Debug.Log("SetCurrentScenesAsTestLevelScenes");
+      SetCurrentScenesAsTestLevelScenes();
+    }
+
+    private static IEnumerator runSetCurrentScenesAsTestLevelScenes()
+    {
+      Debug.Log("Running !!!");
+      yield return new WaitForSeconds(.5f);
+      Debug.Log("Running after a second...");
+
+      SetCurrentScenesAsTestLevelScenes();
+    }
     
 //    [MenuItem("Assets/Create/DMG/My Stuff")]
 //    public static void DoSomething()
