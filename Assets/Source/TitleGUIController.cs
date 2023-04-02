@@ -1,9 +1,8 @@
-using CatFooding;
-using DraconianMarshmallows.Core;
-using DraconianMarshmallows.GUI;
+using DraconianMarshmallows.Scaffold.Core;
+using DraconianMarshmallows.Scaffold.GUI;
 using UnityEngine;
 
-namespace Source
+namespace DraconianMarshmallows.CatFooding
 {
   public class TitleGUIController : MonoBehaviorPlus
   {

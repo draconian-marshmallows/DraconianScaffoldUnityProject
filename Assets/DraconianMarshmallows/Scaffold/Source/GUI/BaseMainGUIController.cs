@@ -1,6 +1,6 @@
-using DraconianMarshmallows.Core;
+using DraconianMarshmallows.Scaffold.Core;
 
-namespace DraconianMarshmallows.GUI
+namespace DraconianMarshmallows.Scaffold.GUI
 {
   public class BaseMainGUIController : MonoBehaviorPlus
   {

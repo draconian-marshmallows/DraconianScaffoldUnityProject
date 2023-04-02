@@ -1,4 +1,4 @@
-using DraconianMarshmallows.Core;
+using DraconianMarshmallows.Scaffold.Core;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEditor.SceneManagement;

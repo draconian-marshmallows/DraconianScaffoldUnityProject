@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DraconianMarshmallows.Scaffold
+namespace DraconianMarshmallows.Scaffold.Scaffold
 {
   [ExecuteInEditMode]
   public class ExecutedInEditMode : MonoBehaviour

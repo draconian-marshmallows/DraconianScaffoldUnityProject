@@ -3,8 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// TODO:: Does this want to be DM.Scaffold.Core ? 
-namespace DraconianMarshmallows.Core
+namespace DraconianMarshmallows.Scaffold.Core
 {
   public class SceneLoader
   {

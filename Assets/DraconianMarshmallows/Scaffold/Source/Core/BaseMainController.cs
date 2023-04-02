@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace DraconianMarshmallows.Core
+namespace DraconianMarshmallows.Scaffold.Core
 {
   public class BaseMainController : MonoBehaviorPlus
   {

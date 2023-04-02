@@ -1,4 +1,4 @@
-using DraconianMarshmallows.Core;
+using DraconianMarshmallows.Scaffold.Core;
 
 namespace Source
 {

@@ -1,4 +1,4 @@
-namespace CatFooding 
+namespace DraconianMarshmallows.CatFooding 
 {
   public static class LevelIndices
   {

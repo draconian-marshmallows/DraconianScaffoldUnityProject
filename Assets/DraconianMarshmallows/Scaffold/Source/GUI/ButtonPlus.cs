@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace DraconianMarshmallows.GUI
+namespace DraconianMarshmallows.Scaffold.GUI
 {
   public class ButtonPlus : Button
   {

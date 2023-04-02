@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DraconianMarshmallows.Core
+namespace DraconianMarshmallows.Scaffold.Core
 {
   [CreateAssetMenu(menuName = "DataAssets/LevelData", fileName = "LevelData")]
   
