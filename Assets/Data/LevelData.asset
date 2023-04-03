@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bbc221a07c84ddd961174f844e73f0f, type: 3}
   m_Name: LevelData
   m_EditorClassIdentifier: 
-  initialLevelSceneIndex: 1
+  initialLevelSceneIndex: 2

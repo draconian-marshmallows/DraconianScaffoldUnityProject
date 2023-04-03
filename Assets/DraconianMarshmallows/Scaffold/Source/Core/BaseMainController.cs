@@ -34,7 +34,9 @@ namespace DraconianMarshmallows.Scaffold.Core
 
     public void LoadLevel(int buildIndex)
     {
-      if (currentLevelManager) onUpdate -= currentLevelManager.OnUpdate;
+      if (currentLevelManager) 
+        onUpdate -= currentLevelManager.OnUpdate;
+      
       sceneLoader.Load(buildIndex);
     }
 

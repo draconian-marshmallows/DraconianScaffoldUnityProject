@@ -2,7 +2,7 @@
 This is the "dog fooding" project to find issues with Scaffold. 
 
 ## Immediate TO DOs ##
-- [ ] Add level/scene manager. 
+- [x] Add level/scene manager. 
 - [ ] Add player: 
     - [ ] Add Collider. 
     - [ ] Add initial force to fly right. 
