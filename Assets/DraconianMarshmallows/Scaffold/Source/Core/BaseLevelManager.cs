@@ -9,7 +9,8 @@ namespace DraconianMarshmallows.Scaffold.Core
       Debug.Log("Level controller started...");
       
       base.Start();
-      BaseMainController.Instance.RegisterLevelController(this);
+      // TODO:: Rename to scene manager ??
+      BaseMainController.Instance.RegisterLevelManager(this);
     }
 
     protected internal override void OnUpdate()

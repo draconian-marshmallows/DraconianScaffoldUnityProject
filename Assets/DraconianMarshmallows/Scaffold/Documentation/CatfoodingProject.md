@@ -1,5 +1,16 @@
-# Scaffold: Cat Food Project #
-
+# Scaffold: Project Cat Food #
 This is the "dog fooding" project to find issues with Scaffold. 
 
-Stuff: TBA. 
+## Immediate TO DOs ##
+- [ ] Add level/scene manager. 
+- [ ] Add player: 
+    - [ ] Add Collider. 
+    - [ ] Add initial force to fly right. 
+    - [ ] Add collision response on level bound colliders to reverse direction. 
+    - [ ] Add bomb dropping behavior. 
+    - [ ] 
+    - [ ] Register for player? events with UI manager. 
+- [ ] 
+
+## IDEAS ##
+- [ ] Introduce enemies in level 2. 

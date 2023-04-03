@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace DraconianMarshmallows.Scaffold.Core
 {
+  // TODO:: Use MonoBehaviorPlus as the interface for stuff to be delegated from major controller/managers. 
   public class BaseMainController : MonoBehaviorPlus
   {
     public static BaseMainController Instance { get; private set; }
@@ -25,20 +26,26 @@ namespace DraconianMarshmallows.Scaffold.Core
       sceneLoader.Load(levelData.initialLevelSceneIndex);
     }
 
-    public void RegisterLevelController(BaseLevelManager manager)
+    public void RegisterLevelManager(BaseLevelManager manager)
     {
       currentLevelManager = manager;
       onUpdate += manager.OnUpdate;
     }
 
-    public void LoadLevel(int buildIndex) => 
-      sceneLoader.Load(buildIndex);
-
-    // TODO:: Can we reference the BaseMainController.Instance to run all updates ?
-    // TODO:: ??
-    protected override void Update()
+    public void LoadLevel(int buildIndex)
     {
-      base.Update();
+      if (currentLevelManager) onUpdate -= currentLevelManager.OnUpdate;
+      sceneLoader.Load(buildIndex);
+    }
+
+    // TODO:: Should be restricted to main controllers ?? 
+    public void AddOnUpdateListener(Action callback)
+    {
+      onUpdate += callback;
+    }
+
+    protected void Update()
+    {
       onUpdate?.Invoke();
     }
   }

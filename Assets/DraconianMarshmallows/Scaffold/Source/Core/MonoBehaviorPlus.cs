@@ -4,10 +4,10 @@ namespace DraconianMarshmallows.Scaffold.Core
 {
   public class MonoBehaviorPlus : MonoBehaviour
   {
-    protected virtual void Start() { }
-
-    // TODO:: This should be removed if we rig-up OnUpdate to be called. 
-    protected virtual void Update() { }
+    protected virtual void Start()
+    {
+      BaseMainController.Instance.AddOnUpdateListener(OnUpdate);
+    }
     
     /// <summary>
     /// Internal callback to avoid Unity "Update" performance issue. 
