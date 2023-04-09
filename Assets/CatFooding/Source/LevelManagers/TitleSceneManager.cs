@@ -1,14 +1,13 @@
 using DraconianMarshmallows.Scaffold.Core;
-using UnityEngine;
 
 namespace Source.LevelManagers
 {
-  public class TitleSceneManager : BaseLevelManager
+  public class TitleSceneManager : BaseSceneManager
   {
-    protected internal override void OnUpdate()
-    {
-      base.OnUpdate();
-      Debug.Log("Title manager updated...");
-    }
+//    protected internal override void OnUpdate()
+//    {
+////      base.OnUpdate();
+//      Debug.Log("Title manager updated...");
+//    }
   }
 }

@@ -1,22 +1,9 @@
-using UnityEngine;
+using System;
 
 namespace DraconianMarshmallows.Scaffold.Core
 {
-  public class BaseLevelManager : MonoBehaviorPlus
+  public abstract class BaseLevelManager : BaseSceneManager, LevelManagerInterface
   {
-    protected override void Start()
-    {
-      Debug.Log("Level controller started...");
-      
-      base.Start();
-      // TODO:: Rename to scene manager ??
-      BaseMainController.Instance.RegisterLevelManager(this);
-    }
-
-    protected internal override void OnUpdate()
-    {
-      Debug.Log("TODO:: Please implement me...");
-//      throw new System.NotImplementedException();
-    }
+    public event Action OnLevelComplete;
   }
 }

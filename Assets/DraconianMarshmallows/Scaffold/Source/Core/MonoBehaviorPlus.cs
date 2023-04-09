@@ -1,17 +1,30 @@
+using System;
 using UnityEngine;
 
 namespace DraconianMarshmallows.Scaffold.Core
 {
   public class MonoBehaviorPlus : MonoBehaviour
   {
-    protected virtual void Start()
+    protected void registerForUpdateCallbacks()
     {
-      BaseMainController.Instance.AddOnUpdateListener(OnUpdate);
+      BaseMainController.Instance.OnUpdate += (Action) onUpdate;
     }
-    
+
     /// <summary>
-    /// Internal callback to avoid Unity "Update" performance issue. 
+    /// Called by Unity Update method if you run `registerForUpdates`. 
+    /// Internal callback to avoid Unity "Update" performance issues. 
     /// </summary>
-    protected internal virtual void OnUpdate() { }
+    private void onUpdate() { }
+    
+    #region Unity Callbacks
+    protected virtual void Awake() {}
+
+    protected virtual void Start() {}
+
+    protected virtual void OnDestroy()
+    {
+      BaseMainController.Instance.OnUpdate -= onUpdate;
+    }
+    #endregion
   }
 }

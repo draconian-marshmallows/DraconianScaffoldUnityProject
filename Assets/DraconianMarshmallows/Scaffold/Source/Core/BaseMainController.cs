@@ -3,17 +3,22 @@ using UnityEngine;
 
 namespace DraconianMarshmallows.Scaffold.Core
 {
-  // TODO:: Use MonoBehaviorPlus as the interface for stuff to be delegated from major controller/managers. 
-  public class BaseMainController : MonoBehaviorPlus
+  public class BaseMainController : MonoBehaviorPlus, MainControllerInterface
   {
     public static BaseMainController Instance { get; private set; }
     
     [SerializeField] private LevelData levelData;
 
-    private Action onUpdate;
-    private SceneLoader sceneLoader;
-    private BaseLevelManager currentLevelManager;
+    public event Action OnUpdate;
 
+    // TODO:: Do we want this for starting scenes that aren't levels ? 
+    public event Action<LevelManagerInterface> OnStartLevel;
+    
+    private SceneLoader sceneLoader;
+    private SceneManagerInterface currentSceneManager;
+    private LevelManagerInterface currentLevelManager;
+
+    // TODO:: Do we still need to come back to this ???
     // TODO:: Figure out how to expose this - this is just a POC for delegation of composed implementations. 
 //    private readonly Action<int> loadLevel = sceneLoader.Load;
     
@@ -21,34 +26,25 @@ namespace DraconianMarshmallows.Scaffold.Core
     {
       Debug.Log("MAIN controller started...");
       Instance = this;
-      
       sceneLoader = new SceneLoader(this);
       sceneLoader.Load(levelData.initialLevelSceneIndex);
     }
 
-    public void RegisterLevelManager(BaseLevelManager manager)
-    {
+    public void LoadLevel(int buildIndex) => sceneLoader.Load(buildIndex);
+
+    #region Framework
+    public void RegisterCurrentSceneManager(SceneManagerInterface manager) => 
+      currentSceneManager = manager;
+
+    public void RegisterLevelManager(LevelManagerInterface manager) => 
       currentLevelManager = manager;
-      onUpdate += manager.OnUpdate;
-    }
+    #endregion
 
-    public void LoadLevel(int buildIndex)
-    {
-      if (currentLevelManager) 
-        onUpdate -= currentLevelManager.OnUpdate;
-      
-      sceneLoader.Load(buildIndex);
-    }
-
-    // TODO:: Should be restricted to main controllers ?? 
-    public void AddOnUpdateListener(Action callback)
-    {
-      onUpdate += callback;
-    }
-
+    #region Unity Callbacks
     protected void Update()
     {
-      onUpdate?.Invoke();
+      OnUpdate?.Invoke();
     }
+    #endregion
   }
 }
