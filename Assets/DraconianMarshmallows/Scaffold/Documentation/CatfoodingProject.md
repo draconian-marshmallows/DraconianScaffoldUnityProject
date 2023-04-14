@@ -5,7 +5,7 @@ This is the "dog fooding" project to find issues with Scaffold.
 - [x] Add level/scene manager. 
 - [ ] Add player: 
     - [ ] Add Collider. 
-    - [ ] Add initial force to fly right. 
+    - [ ] Add code to fly right. 
     - [ ] Add collision response on level bound colliders to reverse direction. 
     - [ ] Add bomb dropping behavior. 
     - [ ] 
