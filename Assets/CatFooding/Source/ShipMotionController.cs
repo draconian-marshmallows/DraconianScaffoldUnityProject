@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace CatFooding.Source
 {
-  public class ShipMotionController : MonoBehaviorPlus
+  public class ShipMotionController : MonoBehaviorPlus2D
   {
     private const float HORIZONTAL_VELOCITY = .05f;
 
@@ -18,16 +18,15 @@ namespace CatFooding.Source
     {
       base.Start();
       trans = transform;
-      BaseMainController.Instance.OnUpdate += onUpdate;
+      registerForUpdateCallbacks();
     }
 
-    // TODO:: Add this to MB Plus ? 
     private void OnTriggerEnter2D(Collider2D collision)
     {
       horizontalVelocity = -horizontalVelocity;
     }
 
-    private void onUpdate()
+    protected override void onUpdate()
     {
       positionHolder = trans.position;
       positionHolder.x += horizontalVelocity;
