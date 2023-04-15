@@ -16,29 +16,5 @@ namespace DraconianMarshmallows.Scaffold.Core
     public GameObject InputFieldPrefab;
     public GameObject PanelPrefab;
     public GameObject DropDownPrefab;
-
-    public static void Initialize(Object instance)
-    {
-      Instance = instance as EditorPrefabReferences;
-      Debug.Log("Init:: " + Instance);
-    }
-
-//    private void Awake()
-//    {
-//      Debug.Log("EditorPrefabReferences :: Awake");
-//      Instance = this;
-//    }
-//
-//    private void OnEnable()
-//    {
-//      Debug.Log("EditorPrefabReferences :: OnEnable");
-//      Instance = this;
-//    }
-//
-//    private void OnValidate()
-//    {
-//      Debug.Log("EditorPrefabReferences :: OnEnable");
-//      Instance = this;
-//    }
   }
 }

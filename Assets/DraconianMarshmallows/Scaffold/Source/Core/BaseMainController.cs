@@ -24,7 +24,7 @@ namespace DraconianMarshmallows.Scaffold.Core
     
     protected override void Start()
     {
-      Debug.Log("MAIN controller started...");
+//      Debug.Log("MAIN controller started...");
       Instance = this;
       sceneLoader = new SceneLoader(this);
       sceneLoader.Load(levelData.initialLevelSceneIndex);

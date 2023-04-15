@@ -20,7 +20,7 @@ namespace DraconianMarshmallows.Scaffold.Core
 
     public void Load(int sceneBuildIndex)
     {
-      Debug.Log("Got request to load scene: " + sceneBuildIndex);
+//      Debug.Log("Got request to load scene: " + sceneBuildIndex);
 
       if (lastLoadedBuildIndex < 0)
       {
@@ -51,7 +51,7 @@ namespace DraconianMarshmallows.Scaffold.Core
       var operation = SceneManager.LoadSceneAsync(buildIndex, LoadSceneMode.Additive);
       while ( ! operation.isDone)
       {
-        Debug.Log("Loading progress: " + operation.progress);
+//        Debug.Log("Loading progress: " + operation.progress);
         // TODO:: Expose progress for use in GUI, etc. 
         yield return null;
       }

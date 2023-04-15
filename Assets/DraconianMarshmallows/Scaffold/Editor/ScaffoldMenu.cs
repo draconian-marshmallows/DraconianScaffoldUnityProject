@@ -16,7 +16,7 @@ namespace DraconianMarshmallows.Scaffold.Editor
 
     static ScaffoldMenu()
     {
-      Debug.Log($"ScaffoldMenu started :: {EditorSceneManager.playModeStartScene == null}");
+//      Debug.Log($"ScaffoldMenu started :: {EditorSceneManager.playModeStartScene == null}");
 
       if (EditorSceneManager.playModeStartScene != null) 
         return;

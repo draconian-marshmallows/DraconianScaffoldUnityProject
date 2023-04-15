@@ -21,8 +21,14 @@ namespace CatFooding.Source
       registerForUpdateCallbacks();
     }
 
-    protected override void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collider)
     {
+      Debug.Log("Collided ...");
+      
+//      if (collision.gameObject.layer)
+//      {
+//        
+//      }
       horizontalVelocity = -horizontalVelocity;
     }
 

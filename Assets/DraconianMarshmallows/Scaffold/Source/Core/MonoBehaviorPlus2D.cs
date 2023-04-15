@@ -7,6 +7,6 @@ namespace DraconianMarshmallows.Scaffold.Core
   /// </summary>
   public class MonoBehaviorPlus2D : MonoBehaviorPlus
   {
-    protected virtual void OnTriggerEnter2D(Collider2D other) { }
+    protected virtual void OnTriggerEnter2D(Collider2D collider) { }
   }
 }

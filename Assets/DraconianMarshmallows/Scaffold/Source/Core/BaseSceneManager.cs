@@ -9,7 +9,7 @@ namespace DraconianMarshmallows.Scaffold.Core
 
     protected override void Start()
     {
-      Debug.Log("Scene controller started...");
+//      Debug.Log("Scene controller started...");
       
       base.Start();
       BaseMainController.Instance.RegisterCurrentSceneManager(this);
