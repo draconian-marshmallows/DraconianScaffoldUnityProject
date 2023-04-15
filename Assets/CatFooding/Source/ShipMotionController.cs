@@ -21,7 +21,7 @@ namespace CatFooding.Source
       registerForUpdateCallbacks();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
       horizontalVelocity = -horizontalVelocity;
     }
