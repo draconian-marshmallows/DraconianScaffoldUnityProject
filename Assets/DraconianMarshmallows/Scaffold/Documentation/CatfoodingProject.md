@@ -11,6 +11,7 @@ This is the "dog fooding" project to find issues with Scaffold.
     - [ ] Add bomb dropping behavior. 
     - [ ] 
     - [ ] Register for player? events with UI manager. 
+    
 - [ ] Create prefabs to separate serialized game-objects into their own files: 
     - [ ] Player/Ship. 
     - [ ] 
