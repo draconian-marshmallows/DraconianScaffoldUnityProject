@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3312eaa809b439f8075fa3ff1ace2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bombPrefab: {fileID: 0}
+  bombPrefab: {fileID: 1356143788936182, guid: 021814fbfa639a641bf957be4016a415, type: 3}
   bombSpawnPoint: {fileID: 0}
 --- !u!50 &106598432
 Rigidbody2D:
