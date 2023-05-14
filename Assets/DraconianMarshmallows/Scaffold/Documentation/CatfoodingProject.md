@@ -9,8 +9,10 @@ This is the "dog fooding" project to find issues with Scaffold.
     - [x] Add collision response on level bound colliders to reverse direction. 
     - [x] Add particle system to leave a trail behind the player. 
     - [x] Add bomb prefab. 
-    - [ ] Add ground plane. 
-    - [ ] Add bomb dropping behavior. 
+    - [x] Add ground plane. 
+    - [x] Add bomb dropping behavior. 
+    - [ ] Add destroyable buildings. 
+    - [ ] Add gas tanks to blow up. 
     - [ ] Register for player? events with UI manager. 
     - [ ] 
     

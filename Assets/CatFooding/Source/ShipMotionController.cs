@@ -37,6 +37,11 @@ namespace CatFooding.Source
       positionHolder = trans.position;
       positionHolder.x += horizontalVelocity;
       trans.position = positionHolder;
+
+      if (Input.GetKeyDown(KeyCode.Space)) 
+        dropBomb();
     }
+
+    private void dropBomb() => Instantiate(bombPrefab, bombSpawnPoint.position, bombSpawnPoint.rotation);
   }
 }
