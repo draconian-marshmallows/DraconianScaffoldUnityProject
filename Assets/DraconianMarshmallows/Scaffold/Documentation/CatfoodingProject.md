@@ -11,7 +11,7 @@ This is the "dog fooding" project to find issues with Scaffold.
     - [x] Add bomb prefab. 
     - [x] Add ground plane. 
     - [x] Add bomb dropping behavior. 
-    - [ ] Add destroyable buildings. 
+    - [x] Add destroyable buildings. 
     - [ ] Add gas tanks to blow up. 
     - [ ] Add score to HUD. 
     - [ ] Register for player? events with UI manager. 
