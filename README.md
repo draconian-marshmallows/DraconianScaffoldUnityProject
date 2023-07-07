@@ -22,6 +22,17 @@ This is a project designed to be a structure that can be imported for handling c
     - [x] Panel
     - [x] Drop Down
 
+- [ ] Add editor extensions to setup a new project. 
+    - [ ] Add new menu item. 
+    - [ ] Add modal editor-window: 
+        - [ ] Add project-name input. 
+        - [ ] Add create project button. 
+        - [ ] Add validation for project-name. 
+        - [ ] Validate project sub-directory does not exist. 
+        - [ ] Add hint boxes for validation issues. 
+        - [ ] 
+    - [ ] 
+    - [ ] 
 - [ ] Add something to set what scene to load running a production build /v testing. 
 - [ ] See if there's a way to figure out if the editor initial-load scene's set & add warning. 
 - [ ] See if there's a way to auto run the script to set the initial editor scene load on startup. 
