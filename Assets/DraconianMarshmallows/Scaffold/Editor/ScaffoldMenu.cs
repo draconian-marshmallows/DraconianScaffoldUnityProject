@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Threading;
 using DraconianMarshmallows.Scaffold.Core;
@@ -5,6 +6,7 @@ using JetBrains.Annotations;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace DraconianMarshmallows.Scaffold.Editor
 {
@@ -122,13 +124,19 @@ namespace DraconianMarshmallows.Scaffold.Editor
 //      Debug.Log("Test !!!! : " + EditorPrefabReferences.Instance.ButtonPrefab);
 //    }
 
+    [MenuItem("Scaffold/Create New Project")][UsedImplicitly]
+    public static void CreateNewProject()
+    {
+      throw new NotImplementedException("This would start the process of creating a new project.");
+    }
+
     // TODO:: Change menu name to "DMScaffold" ??
-    [MenuItem("Draconian Marshmallows/Set Current Scenes as Test Level")][UsedImplicitly]
+    [MenuItem("Project/Set Current Scenes for Testing")][UsedImplicitly]
     public static void SetCurrentScenesAsTestLevelScenes()
     {
-      var assetIds = AssetDatabase.FindAssets("LevelData t:LevelData", new []{"Assets/Data"});
+      var assetIds = AssetDatabase.FindAssets("LevelData t:ProjectMainData", new []{"Assets/Data"});
       var dataPath = AssetDatabase.GUIDToAssetPath(assetIds[0]);
-      var data = AssetDatabase.LoadAssetAtPath<LevelData>(dataPath);
+      var data = AssetDatabase.LoadAssetAtPath<ProjectMainData>(dataPath);
       Debug.Log("Initial level index: " + data.initialLevelSceneIndex);
 
       var sceneCount = EditorSceneManager.sceneCount;

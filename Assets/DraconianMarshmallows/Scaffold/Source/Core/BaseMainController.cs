@@ -7,7 +7,7 @@ namespace DraconianMarshmallows.Scaffold.Core
   {
     public static BaseMainController Instance { get; private set; }
     
-    [SerializeField] private LevelData levelData;
+    [SerializeField] private ProjectMainData projectMainData;
 
     public event Action OnUpdate;
 
@@ -27,7 +27,7 @@ namespace DraconianMarshmallows.Scaffold.Core
 //      Debug.Log("MAIN controller started...");
       Instance = this;
       sceneLoader = new SceneLoader(this);
-      sceneLoader.Load(levelData.initialLevelSceneIndex);
+      sceneLoader.Load(projectMainData.initialLevelSceneIndex);
     }
 
     public void LoadLevel(int buildIndex) => sceneLoader.Load(buildIndex);

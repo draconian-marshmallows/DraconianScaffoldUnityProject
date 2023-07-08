@@ -22,6 +22,9 @@ This is a project designed to be a structure that can be imported for handling c
     - [x] Panel
     - [x] Drop Down
 
+- [x] Rename LevelData to ProjectMainData. 
+- [ ] Add main DMS Data ScriptableObject. 
+    - [ ] References current project data from DMS Data. 
 - [ ] Add editor extensions to setup a new project. 
     - [ ] Add new menu item. 
     - [ ] Add modal editor-window: 
