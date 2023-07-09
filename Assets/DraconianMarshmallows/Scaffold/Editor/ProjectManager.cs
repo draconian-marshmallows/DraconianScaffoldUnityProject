@@ -1,3 +1,6 @@
+using DefaultNamespace;
+using UnityEditor;
+using UnityEngine;
 using static UnityEditor.EditorUtility;
 using static UnityEditor.AssetDatabase;
 
@@ -23,6 +26,12 @@ namespace DraconianMarshmallows.Scaffold.Editor
             CreateFolder($"{ASSETS_SLASH}{path}", "Data");
             CreateFolder($"{ASSETS_SLASH}{path}", "Scenes");
             CreateFolder($"{ASSETS_SLASH}{path}", "Source");
+
+            var gameObject = new GameObject("TestSettingRefs");
+            var componentWithReference = gameObject.AddComponent<ComponentWithReference>();
+            var asset = LoadAssetAtPath<GameObject>("Assets/TestPrefab.prefab");
+
+            componentWithReference.myGameObject = asset;
         }
     }
 }
