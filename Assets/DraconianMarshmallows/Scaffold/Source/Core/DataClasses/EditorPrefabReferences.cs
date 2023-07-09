@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace DraconianMarshmallows.Scaffold.Core
+namespace DraconianMarshmallows.Scaffold.Core.DataClass
 {
   [CreateAssetMenu(menuName = "DataAssets/EditorPrefabReferences")]
   public class EditorPrefabReferences : ScriptableObject

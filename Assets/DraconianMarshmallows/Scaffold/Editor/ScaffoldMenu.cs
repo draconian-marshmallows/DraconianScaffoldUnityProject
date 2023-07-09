@@ -1,7 +1,7 @@
-using System;
 using System.Collections;
 using System.Threading;
 using DraconianMarshmallows.Scaffold.Core;
+using DraconianMarshmallows.Scaffold.Core.DataClass;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -127,7 +127,7 @@ namespace DraconianMarshmallows.Scaffold.Editor
     [MenuItem("Scaffold/Create New Project")][UsedImplicitly]
     public static void CreateNewProject()
     {
-      throw new NotImplementedException("This would start the process of creating a new project.");
+      ProjectManager.CreateProject();
     }
 
     // TODO:: Change menu name to "DMScaffold" ??
